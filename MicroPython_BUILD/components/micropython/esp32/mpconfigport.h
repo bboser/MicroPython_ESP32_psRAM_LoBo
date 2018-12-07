@@ -167,6 +167,7 @@
 #define MICROPY_PY_CMATH                    (1)
 #define MICROPY_PY_GC                       (1)
 #define MICROPY_PY_IO                       (1)
+#define MICROPY_PY_IO_IOBASE                (1)
 #define MICROPY_PY_IO_FILEIO                (1)
 #define MICROPY_PY_IO_BYTESIO               (1)
 #define MICROPY_PY_IO_BUFFEREDWRITER        (1)
@@ -207,7 +208,7 @@
 #define MICROPY_PY_USSL                     (1)
 #define MICROPY_SSL_MBEDTLS                 (1)
 #define MICROPY_PY_USSL_FINALISER           (0) // Crashes on gc if enabled!
-#define MICROPY_PY_UHASHLIB                 (0) // We use the ESP32 version
+#define MICROPY_PY_UHASHLIB                 (1) // We use the ESP32 version
 #define MICROPY_PY_UHASHLIB_SHA1            (MICROPY_PY_USSL && MICROPY_SSL_MBEDTLS)
 
 #ifdef CONFIG_MICROPY_USE_WEBSOCKETS
